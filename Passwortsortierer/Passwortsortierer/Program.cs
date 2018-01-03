@@ -10,6 +10,8 @@ namespace ConsoleApp1
 {
     class Program
     {
+
+        // Diese Funktion ist nicht selbst geschrieben, Quelle: (Microsoft Corporation, 2016)
         static string GetMd5Hash(MD5 md5Hash, string input)
         {
 
@@ -30,10 +32,10 @@ namespace ConsoleApp1
             // Return the hexadecimal string.
             return sBuilder.ToString();
         }
-
+        // Diese Funktion ist nicht selbst geschrieben, Quelle: (Microsoft Corporation, 2016)
         static string GetSha1Hash(SHA1 sha1Hash, string input)
         {
-
+           
             // Convert the input string to a byte array and compute the hash.
             byte[] data = sha1Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 
